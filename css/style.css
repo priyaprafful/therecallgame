@@ -1,0 +1,86 @@
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: blue;
+    font-family: orbitron;
+    
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1fc8db;
+    background-image: linear-gradient(141deg,#9fb8ad 0%,#1fc8db 51%,#2cb5e8 75%);
+    height: 90%;
+    font-family: orbitron;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.button-box{
+    text-align: center;
+    width: 75%;
+    padding-top: 40px;
+    float: left
+
+}
+.row-one{
+    margin: 0px 20px 20px 10px;
+
+}
+.row-two{
+    margin: 0px 20px 20px 10px;
+
+}
+.row-three{
+    margin: 0px 20px 20px 10px;
+
+}
+.num{
+    margin: 5px;
+    width: 5em;
+    height: 4em;
+    font: inherit;
+    background-color: #100a1c;
+    color: rebeccapurple;
+    font-size: 1.5em;
+    
+
+}
+.switches{
+    float: right;
+    width: 25%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.switch-one{
+    display: block;
+    margin-bottom: 20px;
+    width: 130px;
+    height: 50px;
+    font: inherit;
+    font-size: 1.5em;
+    
+}
+.switch-two{
+    display: block;
+    margin-bottom: 20px;
+    width: 130px;
+    height: 50px;
+    font: inherit;
+    font-size: 1.5em;
+}
+.result{
+    display: block;
+    margin-bottom: 20px;
+    font: inherit;
+    width: 130px;
+    height: 50px;
+    font-size: 1.5em;
+
+}
+label{
+    font: inherit;
+    font-size: 1.5em;
+}
