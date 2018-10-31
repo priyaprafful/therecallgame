@@ -1,21 +1,27 @@
-
+body{
+    background-image: url("../images/image-background.png");
+}
 h1{
     text-align: center;
     font-size: 40px;
-    color: blue;
+    color: black;
     font-family: orbitron;
+    border: bisque;
+    background-color: gray;
+    opacity: 3.7;
+    width: 600px;
     
 }
 .box{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#1fc8db;
-    background-image: linear-gradient(141deg,#9fb8ad 0%,#1fc8db 51%,#2cb5e8 75%);
     height: 90%;
     font-family: orbitron;
     margin-left: 10%;
     margin-right: 10%;
+
+background-image: linear-gradient(to right top, #051937, #07254d, #0a3164, #0d3d7b, #114a94);
 }
 
 .button-box{
@@ -84,3 +90,26 @@ label{
     font: inherit;
     font-size: 1.5em;
 }
+.game-end, .game-over {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 100%;
+    height: 100%;
+  }
+   
+   .popup-content {
+    /* opacity: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    background-color: whitesmoke;
+    color: white;
+    border-radius: 4px;
+  }
