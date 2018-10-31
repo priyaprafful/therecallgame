@@ -20,7 +20,7 @@ class Computer {
       if (this.computerFlashing) {
         return;
       }
-
+      var audio = document.querySelector("#audio-clip1");
       this.computerFlashing = true;
     //console.log("flashcard called");
 
@@ -42,66 +42,77 @@ class Computer {
         if (this.computerOrder[i] === "1") {
           console.log("first if statement entered");
           numberOne.style.backgroundColor = "lightblue";
-        
+          audio.play()
         }
       
       
         if (this.computerOrder[i] === "2") {
           numberTwo.style.backgroundColor = "lightblue";
+          audio.play()
        }
       
       
         if (this.computerOrder[i] === "3") {
           numberThree.style.backgroundColor = "lightblue";
+          audio.play()
       }
       
       
       
         if (this.computerOrder[i] === "4") {
           numberFour.style.backgroundColor = "lightblue";
+          audio.play()
         }
       
       
         if (this.computerOrder[i] === "5") {
           numberFive.style.backgroundColor = "lightblue";
+          audio.play()
       }
       
       
         if (this.computerOrder[i] === "6") {
           numberSix.style.backgroundColor = "lightblue";
+          audio.play()
     }
       
         
         if (this.computerOrder[i] === "7") {
            numberSeven.style.backgroundColor = "lightblue";
+           audio.play()
       }
       
         
         if (this.computerOrder[i] === "8") {
         numberEight.style.backgroundColor = "lightblue";
+        audio.play()
    }
       
         
         if (this.computerOrder[i] === "9") {
           numberNine.style.backgroundColor = "lightblue";
+          audio.play()
         }
       
         
          if (this.computerOrder[i] === "#" ) {
      
            numberTen.style.backgroundColor = "lightblue";
+           audio.play()
          }
       
         
          if (this.computerOrder[i] === "@") {
         
            numberEleven.style.backgroundColor = "lightblue";
+           audio.play()
          }
       
         
          if (this.computerOrder[i] === "$") {
        
            numberTwelve.style.backgroundColor = "lightblue";
+           audio.play()
          }
          i++;
          
@@ -174,6 +185,7 @@ numberOne.addEventListener("click", event => {
   player.playerOrder.push(1);
   check();
   numberOne.style.backgroundColor = "lightblue";
+  document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 }); 
 
@@ -185,6 +197,7 @@ numberTwo.addEventListener("click", event => {
   player.playerOrder.push(2);
   check();
   numberTwo.style.backgroundColor = "lightblue";
+  document.querySelector("#audio-clip2").play();
   clearColorAfterPlayerClick()
 });
 numberThree.addEventListener("click", event => {
@@ -195,6 +208,7 @@ numberThree.addEventListener("click", event => {
   player.playerOrder.push(3);
   check();
   numberThree.style.backgroundColor = "lightblue";
+  document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 });
 numberFour.addEventListener("click", event => {
@@ -205,6 +219,7 @@ numberFour.addEventListener("click", event => {
   player.playerOrder.push(4);
   check();
   numberFour.style.backgroundColor = "lightblue";
+  document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 });
 numberFive.addEventListener("click", event => {
@@ -215,6 +230,7 @@ numberFive.addEventListener("click", event => {
   player.playerOrder.push(5);
   check();
   numberFive.style.backgroundColor = "lightblue";
+  document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 });
 numberSix.addEventListener("click", event => {
@@ -225,6 +241,7 @@ numberSix.addEventListener("click", event => {
   player.playerOrder.push(6);
   check();
   numberSix.style.backgroundColor = "lightblue";
+  document.querySelector("#audio-clip2").play();
   clearColorAfterPlayerClick()
 });
 numberSeven.addEventListener("click", event => {
@@ -235,6 +252,7 @@ numberSeven.addEventListener("click", event => {
   player.playerOrder.push(7);
   check();
   numberSeven.style.backgroundColor = "lightblue";
+  document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 });
 numberEight.addEventListener("click", event => {
@@ -245,6 +263,7 @@ numberEight.addEventListener("click", event => {
   player.playerOrder.push(8);
   check();
   numberEight.style.backgroundColor = "lightblue";
+  document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 });
 numberNine.addEventListener("click", event => {
@@ -255,6 +274,7 @@ numberNine.addEventListener("click", event => {
   player.playerOrder.push(9);
   check();
   numberNine.style.backgroundColor = "lightblue";
+  document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 });
 numberTen.addEventListener("click", event => {
@@ -265,6 +285,7 @@ numberTen.addEventListener("click", event => {
   player.playerOrder.push("#");
   check();
   numberTen.style.backgroundColor = "lightblue";
+  document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 });
 numberEleven.addEventListener("click", event => {
@@ -275,6 +296,7 @@ numberEleven.addEventListener("click", event => {
   player.playerOrder.push("@");
   check();
   numberEleven.style.backgroundColor = "lightblue";
+  document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 });
 numberTwelve.addEventListener("click", event => {
@@ -285,6 +307,7 @@ numberTwelve.addEventListener("click", event => {
   player.playerOrder.push("$");
   check();
   numberTwelve.style.backgroundColor = "lightblue";
+  document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 });
 
@@ -333,24 +356,13 @@ function clearColor() {
 function check() {
   if (player.playerOrder[player.playerOrder.length - 1] != computer.computerOrder[player.playerOrder.length - 1]) {
     player.good = false;
-    //alert("You loose  when player order and comporder value is not match");
     gameOverScreen.style.display = "block";
     gameBox.style.opacity = "0.4";
-    //gameBody.style.backgroundImage =.opacity = "0.5";
-
-
+    document.querySelector("#audio-clip3").play();
     return;
 
-    //console.log(
-      //"player.playerOrder[player.playerOrder.length-1]    ",
-      //player.playerOrder[player.playerOrder.length - 1]
-    //);
-    //console.log(
-     // "computer.computerOrder[player.playerOrder.length-1]  ",
-     // computer.computerOrder[player.playerOrder.length - 1]
-   // );
   }
-  if (player.playerOrder.length == 20 && player.good) {
+  if (player.playerOrder.length == 2 && player.good) {
     player.win = true;
     //alert("you won");
     winGame();
@@ -372,6 +384,7 @@ function check() {
 function winGame(){
   player.win=true;
   turnCounter.value = "Win!";
+  document.querySelector("#audio-clip4").play();
 }
 
 

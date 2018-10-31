@@ -8,7 +8,18 @@
     <title>The Recall Game</title>
     <link href='https://fonts.googleapis.com/css?family=Montez|Lobster|Josefin+Sans|Shadows+Into+Light|Pacifico|Amatic+SC:700|Orbitron:400,900|Rokkitt|Righteous|Dancing+Script:700|Bangers|Chewy|Sigmar+One|Architects+Daughter|Abril+Fatface|Covered+By+Your+Grace|Kaushan+Script|Gloria+Hallelujah|Satisfy|Lobster+Two:700|Comfortaa:700|Cinzel|Courgette' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    
+    <audio id="audio-clip1">
+        <source src="./audio/computerButtonAudio.wav"></source>
+    </audio>
+    <audio id="audio-clip2">
+        <source src="./audio/playerButtonAudio.wav"></source>
+    </audio>
+    <audio id="audio-clip3">
+        <source src="./audio/looseAudio.wav"></source>
+    </audio>
+    <audio id="audio-clip4">
+        <source src="./audio/winSound.wav"></source>
+    </audio>
 </head>
 
 <body>
@@ -50,7 +61,7 @@
         <div class="popup-content">
           <div>
             <h2>You Win</h2>
-            <a href="file:///C:/Users/priya/code/projects/first-project-game/index.html"><button id="restart">Play Again</button></a>
+            <a href="./index.html"><button id="restart" class="switch-win">Play Again</button></a>
           </div>
         </div>
       </section>
@@ -58,7 +69,7 @@
         <div class="popup-content">
           <div>
             <h1>You Loose</h1>
-            <a href="file:///C:/Users/priya/code/projects/first-project-game/index.html"><button id="restart">Play Again</button></a>
+            <a href="./index.html"><button id="restart" class="switch-win">Play Again</button></a>
           </div>
         </div>
       </section>

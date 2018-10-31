@@ -113,3 +113,11 @@ label{
     color: white;
     border-radius: 4px;
   }
+  .switch-win{
+    margin-bottom: 20px;
+    width: 130px;
+    height: 50px;
+    font: inherit;
+    font-size: 1.5em;
+    
+}
