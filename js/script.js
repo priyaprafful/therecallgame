@@ -362,7 +362,7 @@ function check() {
     return;
 
   }
-  if (player.playerOrder.length == 2 && player.good) {
+  if (player.playerOrder.length == 20 && player.good) {
     player.win = true;
     //alert("you won");
     winGame();
