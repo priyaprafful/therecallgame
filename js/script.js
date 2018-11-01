@@ -7,6 +7,8 @@ class Computer {
     this.computerFlashing = false;
   }
 
+  
+
   createComputerOrder() {
     var options = ["1", "2", "3", "#","9","8","5","4","6","$","7","@"]
     for (var i = 0; i < 20; i++) {
@@ -22,10 +24,7 @@ class Computer {
       }
       var audio = document.querySelector("#audio-clip1");
       this.computerFlashing = true;
-    //console.log("flashcard called");
-
-   
-      //alert("flash is "+ this.flash);
+      
       var i = 0;
       var number = setInterval(() => {
 
@@ -142,6 +141,15 @@ class Player {
 
 var player = new Player();
 
+var containerBox = document.querySelector("#container");
+containerBox.style.visibility = "hidden";
+
+var gameInfoBox = document.querySelector(".game-info");
+gameInfoBox.style.visibility = "show";
+
+var startGameButton = document.querySelector(".start");
+var firstScreenBox =document.querySelector(".first-screen");
+var gameBox = document.querySelector(".box");
 var turnCounter = document.querySelector("#score");
 var numberOne = document.querySelector("#one");
 var numberTwo = document.querySelector("#two");
@@ -161,7 +169,10 @@ var gameOverScreen = document.querySelector(".game-over");
 var gameEndScreen =document.querySelector(".game-end");
 var gameBox = document.querySelector(".box");
 var restartbutton = document.querySelector("#restart");
-var startButton = document.querySelector("#start");
+
+
+
+var playButton = document.querySelector("#play");
 
 
 
@@ -313,7 +324,8 @@ numberTwelve.addEventListener("click", event => {
 
 
 
-startButton.addEventListener("click", event => {
+playButton.addEventListener("click", event => {
+  console.log("kjj");
   play();
 });
 
@@ -391,3 +403,9 @@ function winGame(){
 
 
 
+ startGameButton.onclick =function () {
+  containerBox.style.visibility = "visible";
+  firstScreenBox.style.display = "none";
+
+
+    }

@@ -1,6 +1,51 @@
 body{
     background-image: url("../images/image-background.png");
 }
+
+.first-screen{
+    position: absolute;
+    width: 83%;
+    height: 100%;
+}
+
+.game-info{
+    background-color: lightgrey;
+    width: 50%;
+    height: 40%;
+    border: 10px solid darkblue;
+    padding: 25px;
+    margin-left: 234px;
+   
+   
+  }
+  .start{
+  background-color: #EEB422;
+  color: #fff;
+  border: none;
+  border-radius: 27px;
+  height: 55px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 3%;
+  padding-right: 3%;
+  position: absolute;
+left: 44%;
+ 
+  
+  
+ 
+
+  
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    color: red; 
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration :underline;
+
+}
+
 h1{
     text-align: center;
     font-size: 40px;
@@ -121,3 +166,14 @@ label{
     font-size: 1.5em;
     
 }
+
+
+
+
+
+
+
+
+
+
+
