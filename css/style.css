@@ -14,7 +14,7 @@ body{
     height: 40%;
     border: 10px solid darkblue;
     padding: 25px;
-    margin-left: 234px;
+    margin-left: 255px;
    
    }
    p{
@@ -172,6 +172,8 @@ label{
     height: 50px;
     font: inherit;
     font-size: 1.5em;
+    color: #EEB422;
+    font-weight: bold;
     
 }
 

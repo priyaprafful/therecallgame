@@ -39,79 +39,84 @@ class Computer {
 
         
         if (this.computerOrder[i] === "1") {
-          console.log("first if statement entered");
-          numberOne.style.backgroundColor = "lightblue";
           audio.play()
+          numberOne.style.backgroundColor = "lightblue";
+          
         }
       
       
         if (this.computerOrder[i] === "2") {
-          numberTwo.style.backgroundColor = "lightblue";
           audio.play()
+          numberTwo.style.backgroundColor = "lightblue";
+          
        }
       
       
         if (this.computerOrder[i] === "3") {
-          numberThree.style.backgroundColor = "lightblue";
           audio.play()
+          numberThree.style.backgroundColor = "lightblue";
+          
       }
       
       
       
         if (this.computerOrder[i] === "4") {
-          numberFour.style.backgroundColor = "lightblue";
           audio.play()
+          numberFour.style.backgroundColor = "lightblue";
+          
         }
       
       
         if (this.computerOrder[i] === "5") {
-          numberFive.style.backgroundColor = "lightblue";
           audio.play()
+          numberFive.style.backgroundColor = "lightblue";
+          
       }
       
       
         if (this.computerOrder[i] === "6") {
-          numberSix.style.backgroundColor = "lightblue";
           audio.play()
-    }
+          numberSix.style.backgroundColor = "lightblue";
+          
+      }
       
         
         if (this.computerOrder[i] === "7") {
+          audio.play()
            numberSeven.style.backgroundColor = "lightblue";
-           audio.play()
+           
       }
       
         
         if (this.computerOrder[i] === "8") {
-        numberEight.style.backgroundColor = "lightblue";
-        audio.play()
-   }
+          audio.play()
+          numberEight.style.backgroundColor = "lightblue";
+        
+      }
       
         
         if (this.computerOrder[i] === "9") {
-          numberNine.style.backgroundColor = "lightblue";
           audio.play()
+          numberNine.style.backgroundColor = "lightblue";
+          
         }
       
         
-         if (this.computerOrder[i] === "#" ) {
-     
-           numberTen.style.backgroundColor = "lightblue";
-           audio.play()
+        if (this.computerOrder[i] === "#" ) {
+          audio.play() 
+          numberTen.style.backgroundColor = "lightblue";
+           
          }
-      
-        
          if (this.computerOrder[i] === "@") {
-        
-           numberEleven.style.backgroundColor = "lightblue";
-           audio.play()
+          audio.play()
+          numberEleven.style.backgroundColor = "lightblue";
+           
          }
       
-        
          if (this.computerOrder[i] === "$") {
-       
+          audio.play()
            numberTwelve.style.backgroundColor = "lightblue";
-           audio.play()
+           
          }
          i++;
          
@@ -144,9 +149,6 @@ var player = new Player();
 var containerBox = document.querySelector("#container");
 containerBox.style.visibility = "hidden";
 
-//var gameInfoBox = document.querySelector(".game-info");
-//gameInfoBox.style.visibility = "show";
-
 var startGameButton = document.querySelector(".start");
 var firstScreenBox =document.querySelector(".first-screen");
 var gameBox = document.querySelector(".box");
@@ -163,18 +165,10 @@ var numberNine = document.querySelector("#nine");
 var numberTen = document.querySelector("#ten");
 var numberEleven = document.querySelector("#eleven");
 var numberTwelve = document.querySelector("#twelve");
-
-
 var gameOverScreen = document.querySelector(".game-over");
 var gameEndScreen =document.querySelector(".game-end");
 var gameBox = document.querySelector(".box");
-var restartbutton = document.querySelector("#restart");
-
-
-
 var playButton = document.querySelector("#play");
-
-
 
 function clearColorAfterPlayerClick(){
   console.log(player.playerOrder, computer.flash)
@@ -184,10 +178,11 @@ function clearColorAfterPlayerClick(){
      if (player.playerOrder.length === 0) {
        gameTurn();
      }
-    },900)
+    },400)
   }
 
 }
+
 numberOne.addEventListener("click", event => {
   if (computer.computerFlashing) {
     return;
@@ -211,6 +206,7 @@ numberTwo.addEventListener("click", event => {
   document.querySelector("#audio-clip2").play();
   clearColorAfterPlayerClick()
 });
+
 numberThree.addEventListener("click", event => {
   if (computer.computerFlashing) {
     return;
@@ -222,6 +218,7 @@ numberThree.addEventListener("click", event => {
   document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 });
+
 numberFour.addEventListener("click", event => {
   if (computer.computerFlashing) {
     return;
@@ -233,6 +230,7 @@ numberFour.addEventListener("click", event => {
   document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 });
+
 numberFive.addEventListener("click", event => {
   if (computer.computerFlashing) {
     return;
@@ -244,6 +242,7 @@ numberFive.addEventListener("click", event => {
   document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 });
+
 numberSix.addEventListener("click", event => {
   if (computer.computerFlashing) {
     return;
@@ -255,6 +254,7 @@ numberSix.addEventListener("click", event => {
   document.querySelector("#audio-clip2").play();
   clearColorAfterPlayerClick()
 });
+
 numberSeven.addEventListener("click", event => {
   if (computer.computerFlashing) {
     return;
@@ -266,6 +266,7 @@ numberSeven.addEventListener("click", event => {
   document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 });
+
 numberEight.addEventListener("click", event => {
   if (computer.computerFlashing) {
     return;
@@ -277,6 +278,7 @@ numberEight.addEventListener("click", event => {
   document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 });
+
 numberNine.addEventListener("click", event => {
   if (computer.computerFlashing) {
     return;
@@ -288,6 +290,7 @@ numberNine.addEventListener("click", event => {
   document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 });
+
 numberTen.addEventListener("click", event => {
   if (computer.computerFlashing) {
     return;
@@ -299,6 +302,7 @@ numberTen.addEventListener("click", event => {
   document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 });
+
 numberEleven.addEventListener("click", event => {
   if (computer.computerFlashing) {
     return;
@@ -310,6 +314,7 @@ numberEleven.addEventListener("click", event => {
   document.querySelector("#audio-clip2").play();
    clearColorAfterPlayerClick()
 });
+
 numberTwelve.addEventListener("click", event => {
   if (computer.computerFlashing) {
     return;
@@ -322,13 +327,9 @@ numberTwelve.addEventListener("click", event => {
    clearColorAfterPlayerClick()
 });
 
-
-
 playButton.addEventListener("click", event => {
-  console.log("kjj");
   play();
 });
-
 
 function play() {
   player.win = false;
@@ -338,7 +339,6 @@ function play() {
   computer.computerTurn = true;
   gameTurn();
 }
-
 
 function gameTurn() {
   clearColor();
@@ -372,21 +372,14 @@ function check() {
     gameBox.style.opacity = "0.4";
     document.querySelector("#audio-clip3").play();
     return;
-
   }
   if (player.playerOrder.length == 20 && player.good) {
     player.win = true;
-    //alert("you won");
     winGame();
     gameEndScreen.style.display = "block";
     gameBox.style.opacity = "0.4";
   }
-   if (!player.good) {
-    
-    alert("under if check good==false of check function");
-   }
   if (computer.turn == player.playerOrder.length && player.good && !player.win) {
-    console.log("'when player turn and not win");
     computer.turn++;
     player.playerOrder = [];
     computer.computerTurn = true;
@@ -399,13 +392,7 @@ function winGame(){
   document.querySelector("#audio-clip4").play();
 }
 
-
-
-
-
- startGameButton.onclick =function () {
+startGameButton.onclick =function () {
   containerBox.style.visibility = "visible";
   firstScreenBox.style.display = "none";
-
-
-    }
+}
