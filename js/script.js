@@ -144,8 +144,8 @@ var player = new Player();
 var containerBox = document.querySelector("#container");
 containerBox.style.visibility = "hidden";
 
-var gameInfoBox = document.querySelector(".game-info");
-gameInfoBox.style.visibility = "show";
+//var gameInfoBox = document.querySelector(".game-info");
+//gameInfoBox.style.visibility = "show";
 
 var startGameButton = document.querySelector(".start");
 var firstScreenBox =document.querySelector(".first-screen");

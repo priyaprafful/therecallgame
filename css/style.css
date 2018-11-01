@@ -16,8 +16,11 @@ body{
     padding: 25px;
     margin-left: 234px;
    
-   
-  }
+   }
+   p{
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+
   .start{
   background-color: #EEB422;
   color: #fff;
@@ -29,13 +32,8 @@ body{
   padding-left: 3%;
   padding-right: 3%;
   position: absolute;
-left: 44%;
+  left: 44%;
  
-  
-  
- 
-
-  
 }
 h3{
     text-align: center;
@@ -135,7 +133,17 @@ label{
     font: inherit;
     font-size: 1.5em;
 }
-.game-end, .game-over {
+.game-end {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 100%;
+    height: 100%;
+  }
+  .game-over {
     display: none;
     justify-content: center;
     align-items: center;
