@@ -122,7 +122,7 @@ class Computer {
          
       setTimeout(function () {
         clearColor();
-      }, 666)
+      }, 400)
 
 },1000);
 
